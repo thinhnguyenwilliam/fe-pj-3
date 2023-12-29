@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/*Products*/
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products__item{
+    width: 45%;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+.products__image{
+    width: 100%;
+    aspect-ratio: 16/9;
+
+    position: relative;/*dùng để chỉnh cái discound qua top right*/
+}
+.products__image img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover/*lun cừa trong box cha: products__image*/;
+}
+.products__discount{
+    background-color: orange;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: 700;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.products__content{
+    padding: 10px;
+}
+.products__title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.products__info{
+    display: flex;
+    justify-content: space-between;
+}
+.products_price{
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
+}
+.products__stock{
+    font-weight: 600;
+}
+/*End Products*/
+
+
+
+/* form-search */
+.form-search{
+    margin: 10px 0px;
+}
+.form-search input{
+    height: 42px;
+    width: 300px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.form-search button{
+    height: 42px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+/* End form-search */
