@@ -10,6 +10,13 @@
 </head>
 <body>
 
+    <h2>Danh sách danh mục</h2>
+    <div id="category" class="category">
+        <!-- -->
+    </div>
+
+
+
     <!-- tạo ra 3 box để css thôi chứ làm thật thì 1 box(rồi cắt qua file js) là ok -->
     <h2>Danh sách sản phẩm</h2>
 
@@ -17,10 +24,17 @@
         <input type="text" name="keywordCanTim" placeholder="Nhập từ khóa" />
         <button type="submit">Tìm kiếm</button>
     </form>
+
+
+    <select id="sort" class="sort">
+        <option value="">Mặc định</option>
+        <option value="price-asc">Giá thấp đến cao</option>
+        <option value="price-desc">Giá cao về thấp</option>
+        <option value="discountPercentage-desc">Giảm giá nhiều nhất</option>
+    </select>
+
     
     <div id="products" class="products">
-        
-
         <!-- <div class="products__item">
             <div class="products__image">
                 <img src="https://i.dummyjson.com/data/products/1/thumbnail.jpg" alt="iPhone 9">
@@ -66,6 +80,12 @@
         </div> -->
     </div>
 
+
+    <div class="pagination">
+        <button id="pagination-prev">Prev</button>
+        <span id="pagination-number">1</span>
+        <button id="pagination-next">Next</button>
+    </div>
 
 
     <script src="assets/js/products.js"></script>

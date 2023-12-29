@@ -84,3 +84,57 @@
     cursor: pointer;
 }
 /* End form-search */
+
+
+
+/* Pagination */
+.pagination button{
+    height: 42px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.pagination span{
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.pagination .hidden{
+    display: none;
+}
+/* End Pagination */
+
+
+
+
+/*filter*/
+.sort{
+    height: 42px;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/*End filter*/
+
+
+/*category*/
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.category__item{
+    background-color: orange;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+/*End category*/
